@@ -9,12 +9,13 @@ jobs:
     steps:
       - checkout
       - run:
-          name: Greeting
-          command: echo Hello, world.
+          name: Terraform Init
+          working_directory: ~/project/dev
+          command: terraform init
       - run:
-          name: Terraform
-          working_directory: ~/projects/dev
-          command: terraform plan
+          name: Terraform Plan
+          working_directory: ~/project/dev
+          command: terraform init
 
 
 
