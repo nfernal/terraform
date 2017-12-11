@@ -16,7 +16,8 @@ jobs:
           name: Terraform Plan
           working_directory: ~/project/dev
           command: terraform plan
-
-
-
+      - run:
+          name: Terraform Apply
+          working_directory: ~/project/dev
+          command: terraform apply
 
